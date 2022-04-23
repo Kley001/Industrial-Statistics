@@ -1,0 +1,24 @@
+----------------------
+#Required Libraries
+
+library(aplpack)
+library(qcc)
+
+-------------------------------------------------------------------------------------------
+#Stem and Leaf Plot
+
+yield<-c(43,35,48,87,59,54,47,49,45,65,79,65,62,60,68,65,73,88,48,33,91,75,85,81,77,58,75,89,53,98)
+stem.leaf(yield, m = 1)
+plot.new()
+
+out <- capture.output(stem.leaf(yield, m = 1))
+text(0, 1, paste(out, collapse = "\n"), adj = c(0, 1))
+-------------------------------------------------------------------------------------------
+#Pareto chart
+
+cost <- c(37500, 12000, 8000, 5100, 5000,4600)
+names(cost) <- c("Insufficient Welding", "Misaligned Components", 
+                  "Defective Components", "Missing Components", 
+                  "Cold joints","Others")
+pareto.chart(cost, cumperc = seq(0, 100, by = 5), ylab = "Cost", ylab2 = "Accumulated Percentage",cex.names = 0.8)
+-------------------------------------------------------------------------------------------
