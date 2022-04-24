@@ -7,13 +7,13 @@ library(qcc)
 -------------------------------------------------------------------------------------------
 #Cause and Effect
 
-cause.and.effect(cause=list(Personal=c("Personal desconoce \n las calles", "" ,"Mal manejo \n de productos"),  
-                            Materiales=c("Productos da?ados\n recibidos del \n proveedor", "Material de \n empaque \n inadecuado"),
-                            Medici?n=c("Fallar en \n estimar el \n tiempo de entrega"),
-                            Ambiente=c("Muchos pedidos \n nocturnos", "Congesti?n en \n horas pico"),
-                            M?todos=c("Productos diferentes \n con nombres \n id?nticos", "Recetas no \n detalladas"),
-                            Maquinaria=c("Se tiene un \n solo veh?culos", "Fallas en la \n m?quina de \n etiquetado")),
-                 effect="Domicilio incorrecto, \n da?ado, retrasado.",cex=c(0.9,0.55,0.8))
+cause.and.effect(cause=list(Personal=c("Staff does not know \n the streets", "" ,"Mishandling \n of products"),  
+                            Materials=c("Dated products\n received from \n supplier", "Unsuitable \n packaging material"),
+                            Measurement=c("Failed to \n estimate the \n delivery time"),
+                            Environment=c("Lots of overnight \n orders", "Congestion at \n peak hours"),
+                            Methods=c("Different products \n with identical \n names", "Recipes not \n detailed"),
+                            Machinery=c("There is only one \n vehicle", "Faults in the \n labeling machine")), 
+                            effect="Wrong Address, \n corrupt, delayed.",cex=c(0.9,0.55,0.8))
 
 -------------------------------------------------------------------------------------------
 #Histogram
